@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome: "
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/nome"
+        />
+    <EditText
+        android:id="@+id/caixaNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/nome"
+        android:layout_alignStart="@+id/nome"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Idade"
+        android:layout_below="@id/caixaNome"
+        android:layout_alignStart="@+id/caixaNome"
+        android:text="Idade: "
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/caixaIdade"
+        android:ems="3"
+        android:layout_alignStart="@+id/Idade"
+        android:layout_below="@+id/Idade"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peso(Kg): "
+        android:layout_toRightOf="@id/caixaIdade"
+        android:layout_below="@id/caixaNome"
+        android:id="@+id/Peso"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:layout_alignStart="@+id/Peso"
+        android:layout_below="@id/Peso"
+        android:id="@+id/caixaPeso"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Altura(Cm): "
+        android:layout_toRightOf="@id/caixaPeso"
+        android:layout_below="@id/caixaNome"
+        android:id="@+id/altura"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:layout_alignStart="@+id/altura"
+        android:layout_below="@id/Peso"
+        android:id="@+id/caixaAltura"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/caixaAltura"
+        android:layout_marginTop="20dp"
+        android:text="Relátorio Nutricional"
+        android:id="@+id/botaoRelatorio"
+        android:onClick="onClickButtonRel"
+        />
+</RelativeLayout>
